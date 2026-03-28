@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WasteAway Waste Removal Services</title>
+  <meta name="description" content="WasteAway offers affordable waste removal, house clearances, man and van services, removals, and garden clearance." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef7ff 0%, #f8fffb 100%);
+      color: #16324a;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0456c8 0%, #0b6fe0 45%, #11a36a 100%);
+      padding: 0;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      max-width: none;
+      object-fit: cover;
+    }
+
+    .tagline-banner {
+      background: #16a96f;
+      text-align: center;
+      padding: 10px;
+      font-weight: 800;
+      color: #ffffff;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 28px 0 18px;
+    }
+
+    .hero-box,
+    .contact-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 2px solid #1aaa73;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 74, 173, 0.10);
+    }
+
+    .hero-box {
+      padding: 28px 22px;
+      text-align: center;
+    }
+
+    .hero-box h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: #0b5ed7;
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+
+    .hero-box p {
+      font-size: 1.04rem;
+      font-weight: 700;
+      color: #24425d;
+      max-width: 900px;
+      margin: 0 auto 12px;
+    }
+
+    .hero-banner {
+      margin-top: 18px;
+      background: linear-gradient(135deg, #16a96f, #0b5ed7);
+      color: #fff;
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 800;
+    }
+
+    .licence {
+      margin-top: 14px;
+      font-weight: 800;
+      color: #16a96f;
+    }
+
+    .section {
+      padding: 18px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.7rem, 4vw, 2.3rem);
+      color: #0b5ed7;
+      font-weight: 800;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 2px solid #1aaa73;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 800;
+      color: #1d4268;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .why-card {
+      background: #fff;
+      border: 2px solid #0b5ed7;
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(11, 94, 215, 0.08);
+    }
+
+    .why-card h3 {
+      color: #0b5ed7;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      font-weight: 700;
+      font-size: 0.98rem;
+    }
+
+    .contact-grid {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-card {
+      padding: 24px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* 25% BIGGER CONTACT BANNER */
+    .contact-banner {
+      margin: 0 auto 16px;
+      width: 275px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      border-radius: 14px;
+      box-shadow: 
+        0 10px 18px rgba(0,0,0,0.25),
+        0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contact-buttons a:hover {
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .contact-buttons img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+    }
+
+    footer {
+      margin-top: 22px;
+      background: linear-gradient(135deg, #0b5ed7, #15a46d);
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      font-weight: 800;
+    }
+
+    .credit {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .credit a img {
+      width: 120px;
+      margin: 8px auto 0;
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tagline-banner {
+        font-size: 0.9rem;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <img src="logo.png" alt="WasteAway Logo">
+  </div>
+</header>
+
+<div class="tagline-banner">
+  Dont Stress it - WasteAway it!
+</div>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-box">
+      <h1>Fast, Affordable Waste Removal</h1>
+      <p>
+        We operate all around the UK at prices you can afford. From single items to full house, office, garage and shed clearances. We also offer man and van services, house removals, and property and garden maintenance.
+      </p>
+      <p>
+        Free quotes available and we’ll beat any genuine quote. Waste taken away within the hour - 24/7.
+      </p>
+      <div class="hero-banner">
+        Free Quotes • 24/7 • We Beat Genuine Quotes
+      </div>
+
+      <div class="licence">
+        ✔ Fully Licensed Waste Carrier
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">House Clearance</div>
+      <div class="service-card">Garden Waste Removal</div>
+      <div class="service-card">Garage & Shed Clearance</div>
+      <div class="service-card">Single Item Collection</div>
+      <div class="service-card">Office Waste</div>
+      <div class="service-card">Man & Van</div>
+      <div class="service-card">House Removals</div>
+      <div class="service-card">Property Maintenance</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Fast Turnaround</h3>
+        <p>Quick collections without dragging it out.</p>
+      </div>
+      <div class="why-card">
+        <h3>Fair Prices</h3>
+        <p>No nonsense pricing. No rip-offs.</p>
+      </div>
+      <div class="why-card">
+        <h3>All-In-One Service</h3>
+        <p>Clearance, removals, and waste all covered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card">
+
+        <img src="contact.png" class="contact-banner" alt="Contact">
+
+        <p>Tap a button and get it sorted.</p>
+
+        <div class="contact-buttons">
+          <a href="mailto:simoncrowder666@qmail.com">
+            <img src="email.png">
+          </a>
+          <a href="https://wa.me/447575174576" target="_blank">
+            <img src="whatsapp.png">
+          </a>
+          <a href="https://www.facebook.com/share/18bLrmLjNj/" target="_blank">
+            <img src="facebook.png">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>WasteAway • Waste Removal Services</p>
+  <p>Free Quotes • Fast Response • Affordable Prices</p>
+
+  <div class="credit">
+    <p>Web Design By</p>
+    <a href="https://www.simplesitestudio.design" target="_blank">
+      <img src="simplesitestudio.png">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
