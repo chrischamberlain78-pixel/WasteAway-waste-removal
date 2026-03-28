@@ -10,46 +10,44 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #eef7ff 0%, #f8fffb 100%);
+      background: #f4f8fb;
       color: #16324a;
     }
 
-    img { display: block; max-width: 100%; }
-    a { text-decoration: none; }
-
-    .container {
+    img {
+      display: block;
       width: 100%;
-      padding: 0 10px;
     }
+
+    a { text-decoration: none; }
 
     header {
       background: linear-gradient(135deg, #0456c8, #11a36a);
     }
 
-    .logo-wrap img { width: 100%; }
-
     .tagline-banner {
       background: #16a96f;
       text-align: center;
-      padding: 10px;
+      padding: 12px;
       font-weight: bold;
       color: #000;
       font-size: 1.2rem;
       text-shadow: 0 0 6px #fff, 0 0 12px #fff;
     }
 
-    .hero { padding: 25px 10px; }
+    /* HERO */
+    .hero {
+      padding: 20px 10px;
+    }
 
     .hero-box {
       background: #fff;
-      border: 2px solid #1aaa73;
       border-radius: 15px;
       padding: 20px;
       text-align: center;
     }
 
     .hero-box img {
-      width: 100%;
       max-width: 600px;
       margin: auto;
     }
@@ -63,7 +61,7 @@
       margin-top: 15px;
       background: linear-gradient(135deg, #16a96f, #0b5ed7);
       color: #fff;
-      padding: 10px;
+      padding: 12px;
       border-radius: 10px;
       font-weight: bold;
     }
@@ -74,32 +72,39 @@
       color: #16a96f;
     }
 
-    .section { padding: 20px 10px; }
+    /* FULL WIDTH IMAGE SECTIONS */
+    .image-section {
+      padding: 15px 0;
+    }
 
-    /* FULL WIDTH IMAGE BOXES */
-    .services-image-box,
-    .why-image-box {
+    .image-section img {
       width: 100%;
-      border: 3px solid #0b5ed7;
-      border-radius: 20px;
-      padding: 10px;
-      background: #fff;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
     }
 
     /* CONTACT */
+    .contact-section {
+      padding: 20px 10px;
+    }
+
     .contact-card {
       background: #fff;
-      border: 2px solid #1aaa73;
-      border-radius: 15px;
+      border-radius: 18px;
       padding: 20px;
       text-align: center;
-      max-width: 500px;
-      margin: auto;
+
+      /* NEW STYLING */
+      border: 3px solid #0b5ed7;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
     }
 
     .contact-banner {
-      width: 250px;
+      width: 260px;
       margin: auto;
     }
 
@@ -116,7 +121,7 @@
       display: inline-block;
       margin: 8px;
       box-shadow: 0 10px 18px rgba(0,0,0,0.3);
-      border-radius: 10px;
+      border-radius: 12px;
       transition: 0.3s;
     }
 
@@ -125,37 +130,34 @@
     }
 
     .contact-buttons img {
-      width: 65px;
+      width: 70px;
     }
 
+    /* FOOTER */
     footer {
-      background: linear-gradient(135deg, #0b5ed7, #15a46d);
       text-align: center;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 20px 10px;
     }
 
     .credit img {
-      width: 315px;
-      margin: 10px auto;
-      display: block;
+      width: 320px;
+      margin: auto;
       box-shadow: 0 12px 20px rgba(0,0,0,0.4);
-      border-radius: 10px;
+      border-radius: 12px;
       transition: 0.3s;
     }
 
     .credit img:hover {
       transform: translateY(-6px);
     }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo-wrap">
-    <img src="logo.png">
-  </div>
+  <img src="logo.png">
 </header>
 
 <div class="tagline-banner">
@@ -163,76 +165,69 @@
 </div>
 
 <section class="hero">
-  <div class="container">
-    <div class="hero-box">
+  <div class="hero-box">
 
-      <img src="fastafford.png">
+    <img src="fastafford.png">
 
-      <p>
-        We operate all around the UK at prices you can afford. From single items to full house, office, garage and shed clearances.
-        We also offer man and van services, house removals, and property and garden maintenance.
-      </p>
+    <p>
+      We operate all around the UK at prices you can afford. From single items to full house, office, garage and shed clearances.
+      We also offer man and van services, house removals, and property and garden maintenance.
+    </p>
 
-      <p>
-        Free quotes available and we’ll beat any genuine quote. Waste taken away within the hour - 24/7.
-      </p>
+    <p>
+      Free quotes available and we’ll beat any genuine quote. Waste taken away within the hour - 24/7.
+    </p>
 
-      <div class="hero-banner">
-        Free Quotes • 24/7 • We Beat Genuine Quotes
-      </div>
-
-      <div class="licence">
-        ✔ Fully Licensed Waste Carrier
-      </div>
-
+    <div class="hero-banner">
+      Free Quotes • 24/7 • We Beat Genuine Quotes
     </div>
+
+    <div class="licence">
+      ✔ Fully Licensed Waste Carrier
+    </div>
+
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section">
-  <div class="container">
-    <div class="services-image-box">
-      <img src="services.png">
-    </div>
-  </div>
+<section class="image-section">
+  <img src="services.png">
+</section>
+
+<!-- HOW -->
+<section class="image-section">
+  <img src="how.png">
 </section>
 
 <!-- WHY -->
-<section class="section">
-  <div class="container">
-    <div class="why-image-box">
-      <img src="why.png">
-    </div>
-  </div>
+<section class="image-section">
+  <img src="why.png">
 </section>
 
 <!-- CONTACT -->
-<section class="section">
-  <div class="container">
-    <div class="contact-card">
+<section class="contact-section">
+  <div class="contact-card">
 
-      <img src="contact.png" class="contact-banner">
+    <img src="contact.png" class="contact-banner">
 
-      <div class="contact-text">
-        Hit a button to get it sorted!
-      </div>
-
-      <div class="contact-buttons">
-        <a href="mailto:simoncrowder666@gmail.com">
-          <img src="email.png">
-        </a>
-
-        <a href="https://wa.me/447575174576">
-          <img src="whatsapp.png">
-        </a>
-
-        <a href="https://www.facebook.com/share/18bLrmLjNj/">
-          <img src="facebook.png">
-        </a>
-      </div>
-
+    <div class="contact-text">
+      Hit a button to get it sorted!
     </div>
+
+    <div class="contact-buttons">
+      <a href="mailto:simoncrowder666@gmail.com">
+        <img src="email.png">
+      </a>
+
+      <a href="https://wa.me/447575174576">
+        <img src="whatsapp.png">
+      </a>
+
+      <a href="https://www.facebook.com/share/18bLrmLjNj/">
+        <img src="facebook.png">
+      </a>
+    </div>
+
   </div>
 </section>
 
