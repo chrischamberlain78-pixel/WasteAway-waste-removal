@@ -30,14 +30,16 @@ header {
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
 }
 
+/* 🔥 UPDATED TAGLINE */
 .tagline {
-  background: #16a96f;
+  background: #021a3a;
   text-align: center;
-  padding: 12px;
+  padding: 8px;              /* thinner */
   font-weight: bold;
-  color: #000;
-  font-size: 1.3rem;
-  text-shadow: 0 0 6px #fff;
+  color: #ffffff;
+  font-size: 1rem;           /* smaller text */
+  white-space: nowrap;       /* forces one line */
+  overflow: hidden;
 }
 
 /* HERO */
@@ -76,10 +78,10 @@ header {
   font-weight: bold;
 }
 
-/* SHARED LARGE STYLED HEADINGS */
+/* HEADINGS */
 .styled-heading {
   text-align: center;
-  font-size: 3rem; /* roughly 50% larger */
+  font-size: 3rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: -1px;
@@ -108,14 +110,13 @@ header {
 
 .services-box ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 28px;
   text-align: left;
 }
 
 .services-box li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.3);
-  margin-left: 5px;
 }
 
 /* WORK */
@@ -205,7 +206,6 @@ footer img {
 @media (max-width: 600px) {
   .styled-heading {
     font-size: 2.6rem;
-    letter-spacing: -0.5px;
   }
 }
 </style>
