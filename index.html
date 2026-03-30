@@ -1,157 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WasteAway Waste Removal Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<title>WasteAway Waste Removal Services</title>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f8fb;
-      color: #16324a;
-    }
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-    img {
-      display: block;
-      width: 100%;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8fb;
+  color: #16324a;
+}
 
-    a { text-decoration: none; }
+img {
+  display: block;
+  width: 100%;
+}
 
-    header {
-      background: linear-gradient(135deg, #0456c8, #11a36a);
-    }
+header {
+  background: linear-gradient(135deg, #0456c8, #11a36a);
+}
 
-    .tagline-banner {
-      background: #16a96f;
-      text-align: center;
-      padding: 12px;
-      font-weight: bold;
-      color: #000;
-      font-size: 1.2rem;
-      text-shadow: 0 0 6px #fff, 0 0 12px #fff;
-    }
+.section-box {
+  border: 3px solid #0b3d91;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
 
-    /* HERO */
-    .hero {
-      padding: 20px 10px;
-    }
+.tagline {
+  background: #16a96f;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.3rem;
+  text-shadow: 0 0 6px #fff;
+}
 
-    .hero-box {
-      background: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      text-align: center;
-    }
+/* HERO */
+.hero {
+  padding: 20px 10px;
+}
 
-    .hero-box img {
-      max-width: 600px;
-      margin: auto;
-    }
+.hero-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-    .hero-box p {
-      font-weight: bold;
-      margin-top: 10px;
-    }
+.hero-box img {
+  max-width: 600px;
+  margin: auto;
+}
 
-    .hero-banner {
-      margin-top: 15px;
-      background: linear-gradient(135deg, #16a96f, #0b5ed7);
-      color: #fff;
-      padding: 12px;
-      border-radius: 10px;
-      font-weight: bold;
-    }
+.hero-box p {
+  margin-top: 12px;
+  font-weight: bold;
+}
 
-    .licence {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #16a96f;
-    }
+.hero-banner {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #16a96f, #0b5ed7);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
-    /* FULL WIDTH IMAGE SECTIONS */
-    .image-section {
-      padding: 15px 0;
-    }
+.licence {
+  margin-top: 10px;
+  color: #16a96f;
+  font-weight: bold;
+}
 
-    .image-section img {
-      width: 100%;
-    }
+/* SERVICES */
+.services {
+  padding: 20px 10px;
+}
 
-    /* CONTACT */
-    .contact-section {
-      padding: 20px 10px;
-    }
+.services-box {
+  background: linear-gradient(135deg, #0b5ed7, #16a96f);
+  padding: 20px;
+  color: #fff;
+}
 
-    .contact-card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 20px;
-      text-align: center;
+.services-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-      /* NEW STYLING */
-      border: 3px solid #0b5ed7;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-      transition: 0.3s;
-    }
+.services-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+}
 
-    .contact-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-    }
+.services-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  margin-left: 5px;
+}
 
-    .contact-banner {
-      width: 260px;
-      margin: auto;
-    }
+/* WORK */
+.work-section {
+  padding: 20px 10px;
+}
 
-    .contact-text {
-      margin-top: 10px;
-      font-weight: bold;
-    }
+.work-img {
+  overflow: hidden;
+}
 
-    .contact-buttons {
-      margin-top: 15px;
-    }
+/* HOW */
+.how {
+  padding: 20px 10px;
+}
 
-    .contact-buttons a {
-      display: inline-block;
-      margin: 8px;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.3);
-      border-radius: 12px;
-      transition: 0.3s;
-    }
+.how-box {
+  background: #fff;
+  padding: 20px;
+}
 
-    .contact-buttons a:hover {
-      transform: translateY(-5px);
-    }
+.how-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-    .contact-buttons img {
-      width: 70px;
-    }
+.how-step {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 20px 10px;
-    }
+.how-step:nth-child(odd) { background: #e8f3ff; }
+.how-step:nth-child(even) { background: #f3ffe8; }
 
-    .credit img {
-      width: 320px;
-      margin: auto;
-      box-shadow: 0 12px 20px rgba(0,0,0,0.4);
-      border-radius: 12px;
-      transition: 0.3s;
-    }
+/* WHY */
+.why {
+  padding: 20px 10px;
+}
 
-    .credit img:hover {
-      transform: translateY(-6px);
-    }
+.why-box {
+  background: linear-gradient(180deg, #0b5ed7, #1182b8, #16a96f);
+  padding: 20px;
+  color: #fff;
+}
 
-  </style>
+.why-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.why-item {
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 20px 10px;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-buttons a {
+  display: inline-block;
+  margin: 8px;
+}
+
+.contact-buttons img {
+  width: 70px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  width: 300px;
+}
+</style>
 </head>
 
 <body>
@@ -160,22 +195,28 @@
   <img src="logo.png">
 </header>
 
-<div class="tagline-banner">
+<div class="tagline">
   Dont Stress it - WasteAway it!
 </div>
 
 <section class="hero">
-  <div class="hero-box">
-
+  <div class="hero-box section-box">
     <img src="fastafford.png">
 
     <p>
-      We operate all around the UK at prices you can afford. From single items to full house, office, garage and shed clearances.
-      We also offer man and van services, house removals, and property and garden maintenance.
+      We provide fast, affordable waste removal in Sheffield and surrounding areas, with services also available across the UK when required.
     </p>
 
     <p>
-      Free quotes available and we’ll beat any genuine quote. Waste taken away within the hour - 24/7.
+      From single item collections to full house clearances, office clearances, garage and shed clearances, we handle it all. We also offer man and van services, house removals, property maintenance, and garden waste removal.
+    </p>
+
+    <p>
+      As a fully licensed waste carrier, we provide reliable, hassle-free clearances you can trust.
+    </p>
+
+    <p>
+      Get a free quote today. We aim for same-day or next-day collections wherever possible, and we’ll beat any genuine quote. Waste can often be removed within the hour, 24/7.
     </p>
 
     <div class="hero-banner">
@@ -185,58 +226,73 @@
     <div class="licence">
       ✔ Fully Licensed Waste Carrier
     </div>
-
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="image-section">
-  <img src="services.png">
+<section class="services">
+  <div class="services-box section-box">
+    <h2>Our Services</h2>
+    <ul>
+      <li>House Clearance</li>
+      <li>Garden Waste Removal</li>
+      <li>Garage & Shed Clearance</li>
+      <li>Single Item Collection</li>
+      <li>Office Waste</li>
+      <li>Man & Van</li>
+      <li>House Removals</li>
+      <li>Property Maintenance</li>
+    </ul>
+  </div>
 </section>
 
-<!-- HOW -->
-<section class="image-section">
-  <img src="how.png">
+<section class="work-section">
+  <div class="work-img section-box">
+    <img src="work.png">
+  </div>
 </section>
 
-<!-- WHY -->
-<section class="image-section">
-  <img src="why.png">
+<section class="how">
+  <div class="how-box section-box">
+    <h2 class="how-title">How It Works</h2>
+
+    <div class="how-step">📞 Get in touch</div>
+    <div class="how-step">📋 Get a fast quote</div>
+    <div class="how-step">🚚 We arrive and clear it</div>
+    <div class="how-step">♻️ Waste disposed responsibly</div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section">
-  <div class="contact-card">
+<section class="why">
+  <div class="why-box section-box">
+    <h2>Why Choose Us</h2>
 
-    <img src="contact.png" class="contact-banner">
+    <div class="why-item">⚡ Fast response</div>
+    <div class="why-item">💪 No heavy lifting</div>
+    <div class="why-item">✔ Fully licensed</div>
+    <div class="why-item">🤝 Friendly service</div>
+  </div>
+</section>
 
-    <div class="contact-text">
-      Hit a button to get it sorted!
-    </div>
+<section class="contact">
+  <div class="contact-box section-box">
+
+    <img src="contact.png" style="max-width:250px;margin:auto;">
+
+    <p><strong>Hit a button to get it sorted!</strong></p>
 
     <div class="contact-buttons">
-      <a href="mailto:simoncrowder666@gmail.com">
-        <img src="email.png">
-      </a>
-
-      <a href="https://wa.me/447575174576">
-        <img src="whatsapp.png">
-      </a>
-
-      <a href="https://www.facebook.com/share/18bLrmLjNj/">
-        <img src="facebook.png">
-      </a>
+      <a href="mailto:simoncrowder666@gmail.com"><img src="email.png"></a>
+      <a href="https://wa.me/447575174576"><img src="whatsapp.png"></a>
+      <a href="https://www.facebook.com/share/18bLrmLjNj/"><img src="facebook.png"></a>
     </div>
 
   </div>
 </section>
 
 <footer>
-  <div class="credit">
-    <a href="https://www.simplesitestudio.design">
-      <img src="simplesitestudio.png">
-    </a>
-  </div>
+  <a href="https://www.simplesitestudio.design">
+    <img src="simplesitestudio.png">
+  </a>
 </footer>
 
 </body>
