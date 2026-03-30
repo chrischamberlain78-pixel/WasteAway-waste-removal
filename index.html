@@ -76,6 +76,25 @@ header {
   font-weight: bold;
 }
 
+/* SHARED LARGE STYLED HEADINGS */
+.styled-heading {
+  text-align: center;
+  font-size: 3rem; /* roughly 50% larger */
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.styled-heading .dark-word {
+  color: #4d2f25;
+}
+
+.styled-heading .green-word {
+  color: #97bf54;
+}
+
 /* SERVICES */
 .services {
   padding: 20px 10px;
@@ -85,11 +104,6 @@ header {
   background: linear-gradient(135deg, #0b5ed7, #16a96f);
   padding: 20px;
   color: #fff;
-}
-
-.services-box h2 {
-  text-align: center;
-  margin-bottom: 15px;
 }
 
 .services-box ul {
@@ -121,11 +135,6 @@ header {
 .how-box {
   background: #fff;
   padding: 20px;
-}
-
-.how-title {
-  text-align: center;
-  margin-bottom: 15px;
 }
 
 .how-step {
@@ -192,6 +201,13 @@ footer img {
   width: 300px;
   margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+  .styled-heading {
+    font-size: 2.6rem;
+    letter-spacing: -0.5px;
+  }
+}
 </style>
 </head>
 
@@ -237,7 +253,9 @@ footer img {
 
 <section class="services">
   <div class="services-box section-box">
-    <h2>Our Services</h2>
+    <h2 class="styled-heading">
+      <span class="dark-word">Our</span> <span class="green-word">Services</span>
+    </h2>
     <ul>
       <li>House Clearance</li>
       <li>Garden Waste Removal</li>
@@ -259,7 +277,9 @@ footer img {
 
 <section class="how">
   <div class="how-box section-box">
-    <h2 class="how-title">How It Works</h2>
+    <h2 class="styled-heading">
+      <span class="dark-word">How</span> <span class="green-word">It Works</span>
+    </h2>
 
     <div class="how-step">📞 Get in touch</div>
     <div class="how-step">📋 Get a fast quote</div>
